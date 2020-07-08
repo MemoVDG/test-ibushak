@@ -9,4 +9,4 @@ app.get('/', (req, res) => {
   });
 
 productsAPI(app);
-app.listen(port, () => console.log(`Listening in port: ${port}`));
+app.listen(process.env.PORT || port, () => console.log(`Listening in port: ${port}`));
