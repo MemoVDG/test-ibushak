@@ -7,12 +7,17 @@
     "dev": "set DEBUG=app:*&& nodemon index",
     "start": "SET NODE_ENV=production node index"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "heroku"
+  ],
+  "author": "MemoVDG",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
     "express": "^4.17.1",
     "lodash": "^4.17.15"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
