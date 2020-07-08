@@ -4,5 +4,9 @@ const productsAPI = require('./routes/products');
 
 const port = 3000;
 
+app.get('/', (req, res) => {
+    res.send('Hello world');
+  });
+
 productsAPI(app);
 app.listen(port, () => console.log(`Listening in port: ${port}`));
